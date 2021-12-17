@@ -90,6 +90,7 @@ extension TableViewController  {
         
         do{
             try context.save()
+            getItem()
         }catch{
             print(error.localizedDescription)
         }
